@@ -3,6 +3,7 @@ const faders = document.querySelectorAll('.fade-in');
 const navbar = document.querySelector('.navbar');
 
 
+
 function revealOnScroll() {
   const triggerBottom = window.innerHeight * 0.85;
   faders.forEach(el => {
@@ -27,6 +28,7 @@ window.addEventListener('mousemove', (e) => {
     navbar.style.top = '-100px'; // hide navbar
   }
 });
+
 
 
 window.addEventListener('scroll', revealOnScroll);

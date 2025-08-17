@@ -7,7 +7,7 @@ html {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background:#000;
+  background :linear-gradient(135deg, #232526 0%, #0f2027 100%);
   color:#fff;
   overflow-x:hidden;
 }
@@ -119,11 +119,15 @@ body {
   gap:20px;
 }
 .skill-card {
-  background:#111; padding:20px;
+  background: rgba(30, 30, 30, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  padding:20px;
   border-radius:12px; font-weight:bold;
-  transition:.3s;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.skill-card:hover { transform:scale(1.05); box-shadow:0 0 30px #dac406bd; }
+.skill-card:hover { transform:scale(1.05); box-shadow: 0 10px 20px rgba(255, 230, 0, 0.3); }
 #skills h2{
     font-size: 28px;
     margin-bottom: 15px;
@@ -140,13 +144,16 @@ body {
 }
 
 .project-card {
-  background: #1a1a1a;
-  border-radius: 10px;
+  background: rgba(30, 30, 30, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 16px;
   padding: 20px;
+  backdrop-filter: blur(8px);
   position: relative;
   overflow: hidden;
   color: white;
   cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #projects p{
@@ -155,7 +162,7 @@ body {
 
 .project-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(255, 204, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(255, 230, 0, 0.3);
 }
 
 .project-card h3 {
@@ -206,13 +213,16 @@ body {
 }
 
 .project-card {
-  background: #1a1a1a;
+  background: rgba(30, 30, 30, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 20px;
   color: white;
   cursor: default; /* no pointer needed */
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
@@ -257,12 +267,14 @@ body {
 }
 
 .contact-card {
-  background-color: #1a1a1a;
+  background: rgba(30, 30, 30, 0.7);
   padding: 20px;
   border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s, box-shadow 0.3s;
   color: white;
   min-width: 220px; /* ensures cards are not too small */
 }
