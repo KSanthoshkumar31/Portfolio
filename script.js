@@ -28,6 +28,29 @@ window.addEventListener('mousemove', (e) => {
     navbar.style.top = '-100px'; // hide navbar
   }
 });
+// Hide all sections except the selected one
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').replace('#', '');
+    document.querySelectorAll('section').forEach(sec => {
+      sec.style.display = sec.id === targetId ? 'flex' : 'none';
+    });
+    // Scroll to top for better UX
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+// Show home section by default on page load
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('section').forEach(sec => {
+    sec.style.display = sec.id === 'home' ? 'flex' : 'none';
+  });
+});
+function showFullProject(id) {
+  // You can expand this to show a modal, redirect, or show more details
+  alert('Show full details for ' + id);
+}
 
 
 
